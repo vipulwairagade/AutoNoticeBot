@@ -1,0 +1,246 @@
+body{
+	padding:0px;
+	margin:0px;
+	font-family: 'Inconsolata', monospace;
+}
+
+/* nav bar */
+.nav-img{
+	text-align:center;
+	background-color:#fff;
+	z-index:2;
+	position:relative;
+}
+.nav-img img{
+	left:calc(50% -);
+	position:relative;
+	max-width:100%;
+}
+.nav {
+	width: 100%;
+	background-color:#121121;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	z-index:2;
+
+}
+
+.nav ul {
+	list-style: none;
+	text-align:center;
+	margin:auto;
+	padding:auto;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+}
+
+.nav ul li {
+	color: #eaceac;
+	text-align:center;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight:50000;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	color: #eaceac;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:12px;
+	padding-right:12px;
+	margin-right:40px;
+}
+
+#list li:hover{
+	background-color:#eaceac;
+	color: #121212;
+	cursor: pointer;
+}
+
+ul li a {
+	color: #eaceac;
+	text-decoration: none;
+	display:block;
+}
+
+/* side bar*/
+#mySidebar{
+	height:100%;
+	background-color:#d8d8d8;
+	color:#121121;
+	width:150px;
+	float:left;
+	text-align:left;
+	padding-left:20px;
+	transition: all 2s linear;
+	-webkit-transition: all 2s linear;
+	-moz-transition: all 2s linear;
+	-o-transition: all 2s linear;
+	position:fixed;
+	padding-top:180px;
+	z-index:1;
+	top:0;
+	animation:animateleft;
+}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+#mySidebar a{
+	float:none;
+	text-decoration:none;
+	padding: 12px 12px;
+	font-size:20px;
+	font-weight:400;
+	color:#121212;
+	display:block;
+}
+
+#mySidebar a:hover{
+	background-color:#fff;
+}
+
+/*container*/
+#containerHome{
+	padding:0px;
+	margin:0;
+	transition:all 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	-webkit-transition:all 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	-moz-transition:all 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+/* inner container of home*/
+.container-inner{
+	width:95%;
+	color:black;
+	font-weight:500;
+}
+.container-inner ul {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.container-inner ul li{
+	text-decoration:none;
+	list-style:none;
+	padding:2px;
+	display:block;
+	color:#6e6e71;
+}
+.container-inner table{
+	padding:10px;
+}
+
+.hidden{
+	text-align:center;
+	font-size:30px;
+	font-weight:800;
+	margin-top:20px;
+
+}
+.circle{
+  margin-right:40px;
+}
+.circle a{
+	font-weight:800;
+	color:#75757b;
+}
+.circle a:hover{
+	color:#eaceac;
+}
+.circle-div{
+	border:1px solid;
+	margin-left:50px;
+	margin-right:50px;
+	width:92%;
+	margin-bottom:50px;
+}
+.circle-div h2{
+	font-size:20px;
+	margin-left:20px;
+	margin-right:20px;
+	color:#121121;
+
+}
+.main_li{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+/*MEDIA*/
+@media(min-width:768px){
+	.nav{
+		background-color:#121121;
+		z-index:2;
+		position:absolute;
+	}
+	#list{
+		float:left;
+		display:flex;
+		transition:all 1s linear;
+	}
+	.nav ul{
+		display:flex;
+		text-align:center;
+		justify-content:center
+	}
+	.nav ul li {
+		width:100px;
+		margin-top:0px;
+		margin-bottom:0px;
+		margin-left:-20px;
+		margin-right:20px;
+
+	}
+	.cross{
+		display:none;
+	}
+	#containerHome{
+		margin:0;
+		padding-top:60px;
+		padding-left:170px;
+		position:relative;
+		transition: all 2s linear;
+		-webkit-transition: all 2s linear;
+		-moz-transition: all 2s linear;
+		-o-transition: all 2s linear;
+		animation:animateright 0.9s;
+	}
+		@keyframes animateright{from{left:-700px;opacity:0; background-color:#a1a1a1} to {left:300px;opacity:1;background-color:#fff}}
+}
+
+@media(max-width:767px){
+	#mySidebar{
+		display:none;
+	}
+}
+
+/* footer*/
+
+#myFooter{
+	width:100%;
+	color:#eaceac;
+	background-color:#121121;
+	text-align:center;
+	font-size:22px;
+	padding-bottom:30px;
+}
+.footer_up{
+	background-color:#eaceac;
+	color:#121121;
+	font-size:14px;
+	padding-top:1px;
+	padding-bottom:1px;
+	margin:0;
+	width:100%;
+}
+#myFooter a{
+	text-decoration:none;
+	color:#eaceac;
+	cursor:pointer;
+}
+#myFooter a:hover{
+	color:#fff;
+}
+
+
+
+

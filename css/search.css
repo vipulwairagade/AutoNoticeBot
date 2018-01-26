@@ -1,0 +1,89 @@
+.searchbox[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchbox[type=text]:focus {
+    width: 100%;
+}
+
+#normalSearch {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#vehicleSearch {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#containerSearch {
+    text-align: center;
+}
+
+@media (min-width: 768px){
+#containerSearch {
+  margin-left: 10em;
+  margin-top: 5em;
+  text-align: center;
+}
+}
+
+/*input css*/
+#state, #city, #alpha, #num {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#state {
+  width: 20px;
+}
+
+#city {
+  width: 20px;
+}
+
+#alpha {
+  width: 20px;
+}
+
+#num {
+  width: 40px;
+}
+
+#submit {
+  margin-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
